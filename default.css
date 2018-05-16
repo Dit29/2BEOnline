@@ -1,0 +1,704 @@
+html, body {
+	height: 100%;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: rgba(0,0,0,.04);
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 12pt;
+	font-weight: 300;
+	color: #363636;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+}
+
+p, ol, ul {
+	margin-top: 0px;
+}
+
+p {
+	line-height: 190%;
+}
+
+strong {
+}
+
+a {
+	color: #171717;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a img {
+	border: none;
+}
+
+	.image
+	{
+		display: inline-block;
+	}
+	
+		.image img
+		{
+			display: block;
+			width: 100%;
+		}
+
+	.image-full
+	{
+		display: block;
+		width: 100%;
+		margin: 0 0 2em 0;
+	}
+	
+	.image-left
+	{
+		float: left;
+		margin: 0 2em 2em 0;
+	}
+	
+	.image-centered
+	{
+		display: block;
+		margin: 0 0 2em 0;
+	}
+
+		.image-centered img
+		{
+			margin: 0 auto;
+			width: auto;
+		}
+
+hr {
+	display: none;
+}
+
+
+/*********************************************************************************/
+/* List Styles                                                                   */
+/*********************************************************************************/
+
+	ul.style1
+	{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	
+	ul.style1 li
+	{
+		border-top: solid 1px #E5E5E5;
+		padding: 0.80em 0;
+	}
+	
+	ul.style1 li:first-child
+	{
+		border-top: 0;
+		padding-top: 0;
+	}
+
+	ul.style2
+	{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	
+	ul.style2 li
+	{
+		border-top: solid 1px #E5E5E5;
+		padding: 0.80em 0;
+	}
+	
+	ul.style2 li:first-child
+	{
+		border-top: 0;
+		padding-top: 0;
+	}
+
+/*********************************************************************************/
+/* Heading Titles                                                                */
+/*********************************************************************************/
+
+	.title
+	{
+		margin-bottom: 2em;
+		text-transform: uppercase;
+	}
+
+	.title h2
+	{
+		letter-spacing: 0.20em;
+		font-weight: 700;
+		font-size: 2em;
+		color: #9B0808;
+	}
+	
+	.title .byline
+	{
+		letter-spacing: 0.15em;
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 0.90em;
+		color: #6F6F6F;
+	}
+
+/** WRAPPER */
+
+#wrapper {
+	background: #FFFFFF url(images/bg01.png) repeat;
+	height:100%;
+	width:100%;
+	overflow:hidden; /* or overflow:auto; if you want scrollbars */
+}
+
+.container {
+	/*width: 1200px;
+	width: 100%; */
+	height: 100%;
+	margin: auto;
+}
+
+.clearfix {
+	clear: both;
+}
+
+
+/*********************************************************************************/
+/* Wrappers                                                                      */
+/*********************************************************************************/
+
+#header-wrapper
+{
+	overflow: hidden;
+	height: 350px;
+	background: url('images/banner.jpg') no-repeat top center;
+	background-size: 100%;
+}
+
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+#header 
+{
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+
+
+/** MENU */
+
+#menu-wrapper
+{
+	background: #9B0808;
+}
+
+#menu {
+	overflow: hidden;
+	height: 50px;
+}
+
+#menu ul {
+	margin: auto;
+	padding: 0px 0px 0px 0px;
+	list-style: none;
+	line-height: normal;
+	text-align: center;
+}
+
+#menu li {
+	display: inline-block;
+}
+
+#menu a {
+	display: block;
+	letter-spacing: 1px;
+	line-height: 50px;
+	padding: 0 40px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.80em;
+	font-weight: 600;
+	border: none;
+	color: #FFF;
+}
+
+#menu a:hover, #menu .current_page_item a {
+	text-decoration: none;
+}
+
+#menu .current_page_item a {
+	background: #800707;
+}
+
+/** PAGE */
+
+#page
+{
+	position: relative;
+	overflow: hidden;
+	padding: 6em 0em 5em 0em;
+}
+
+/** CONTENT */
+
+#content
+{
+	float: right;
+	width: 790px;
+}
+
+/*********************************************************************************/
+/* Welcome                                                                       */
+/*********************************************************************************/
+
+#welcome
+{
+	overflow: hidden;
+	padding: 5em 0em;
+	border-bottom: 1px solid #E5E5E5;
+	text-align: center;
+}
+
+#welcome h2
+{
+	letter-spacing: 0.20em;
+	text-transform: uppercase;
+	font-size: 2.6em;
+}
+
+#welcome p
+{
+	font-size: 1.3em;
+}
+
+#welcome .byline
+{
+	display: block;
+	padding: 0em 0em 1.5em 0em;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 1.2em;
+	color: #6F6F6F;
+}
+
+/*********************************************************************************/
+/* Portfolio                                                                     */
+/*********************************************************************************/
+
+#working-area-wrapper
+{
+	background: rgba(0,0,0,.04);
+	/*padding: 1em 0em; spacing on top bot working area wrapper */
+	margin: 0;
+}
+
+#portfolio
+{
+	overflow: hidden;
+}
+
+#portfolio .title h2
+{
+	font-size: 1.2em;
+	color: #9B0808;
+}
+
+#portfolio .byline
+{
+	font-size: 1em;
+	color: #EEA7C1;
+}
+	
+/*********************************************************************************/
+/* Button Style                                                                  */
+/*********************************************************************************/
+
+.button
+{
+	display: inline-block;
+	margin-top: 1.5em;
+	padding: 0.50em 3em 0.50em 2em;
+	background: #9B0808;
+	letter-spacing: 0.20em;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 0.90em;
+	color: #FFF;
+}
+
+.button:before
+{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 20px;
+	text-align: center;
+	color: #FFF;
+}
+
+/*********************************************************************************/
+/* Sidebar                                                                       */
+/*********************************************************************************/
+#sidebar
+{
+	float: left;
+	width: 20%;
+	background-color: lightgray;
+	/* height: 500px; */
+	height: 100%;
+	overflow: hidden;
+	overflow-y: scroll;
+	margin-left: 1px;
+	min-height: 500px;
+}
+
+#sidebar .title h2
+{
+	font-size: 1.3em;
+}
+
+
+/*********************************************************************************/
+/* Import Area	                                                                 */
+/*********************************************************************************/
+#import-area
+{
+	float: left;
+	min-width: 270px;
+	width:100%;
+	height: 100%;
+	margin-left: 24px; /* check
+	padding-right: 15px; */
+	overflow-y: scroll;
+}
+
+#plan-container {
+	width: 100%;
+	height: 150px;
+	display: table;
+	background-color: white;
+	border: medium 1px yellow;
+	margin: auto;
+	max-width: 250px;
+}
+
+#plan-container .image-container {
+	text-align: center;
+	vertical-align: middle;
+	display: table-cell;
+}
+
+#plan-container .image-container img {
+	max-width: 245px;
+	max-height: 145px;        
+}
+
+
+
+/*********************************************************************************/
+/* Working Area: 																 */
+/*********************************************************************************/
+	
+#working-area
+{
+	width: 79.87%;
+	float: left;
+	background-color: lightgray;
+	height: 500px;
+}
+
+#working-canvas
+{
+	/*width:850px; */
+	width:100%;
+	height:400px; 
+	background-color:white;
+	position: static;
+	align-self: center;
+	margin:auto;
+	margin-top: 50px;
+	background-image: image(img);
+}
+
+@media (max-width: 1150px){
+}
+
+
+/*********************************************************************************/
+/* Login Properties                                                              */
+/*********************************************************************************/
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+/*
+.container {
+    padding: 16px;
+}
+*/
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+
+/*********************************************************************************/
+/* Navigation Drop-down Bar                                                      */
+/*********************************************************************************/
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+
+/*********************************************************************************/
+/* Tester + Garbage Collector                                                    */
+/*********************************************************************************/
+	
+.jobinfo {
+	width: 200 px;
+	height: 200 px;
+	alignment-baseline: center;
+}
+
+.button {
+	font-size: 16px;
+}
+
+#column1,
+#column2,
+#column3,
+#column4
+{
+	width: 282px;
+}
+
+#column1,
+#column2
+{
+	float: left;
+	margin-right: 24px;
+}
+
+#box1
+{
+	float: left;
+	width: 354px;
+	margin-right: 24px;
+	padding-right: 30px;
+}
+
+#box3
+{
+	float: right;
+	width: 344px;
+	padding-left: 40px;
+}
+
+full-size{
+  height:100%;
+  width:100%;
+  overflow:hidden; /* or overflow:auto; if you want scrollbars */
+}
